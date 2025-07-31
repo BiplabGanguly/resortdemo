@@ -3,7 +3,6 @@ import "./Banner.style.css"
 import Navbar from './Navbar'
 import aos from 'aos'
 import 'aos/dist/aos.css';
-import Intro from './Intro';
 
 export default function Banner() {
   useEffect(()=>{
@@ -26,8 +25,7 @@ export default function Banner() {
         </div>
 
     </div>
-        {/* intro section code  */}
-        <Intro/>
+   
     </>
 
   )
