@@ -1,6 +1,9 @@
+import Banner from "../../Component/Home/Banner";
 
 export default function index() {
   return (
-    <div>Home Page</div>
+    <div>
+      <Banner/>
+    </div>
   )
 }
