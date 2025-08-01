@@ -29,8 +29,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-white ">
-              HOTELSALBARI
+            <Link to="/" className="text-2xl font-bold text-white flex justify-center items-center ">
+            <img src="https://static.wixstatic.com/shapes/7befdd_346a73cdd7934a978978b5f4f67e48bc.svg" alt="" className="size-30"/>
+              THE SALBARI
             </Link>
           </div>
 

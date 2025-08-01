@@ -14,7 +14,7 @@ export default function() {
        <div className="container-lg mx-auto    p-4">
             <div className='flex justify-between p-6 flex-wrap'>
                 <div className='lg:w-[40%] h-150  flex' data-aos="fade-right">
-                    <img src={introbg} alt="" className=""  />
+                    <img src="https://static.wixstatic.com/media/7befdd_c0e59212d0a44a00baa5e3346777cc2f~mv2.jpg/v1/fit/w_304,h_224,q_90,enc_avif,quality_auto/7befdd_c0e59212d0a44a00baa5e3346777cc2f~mv2.jpg" alt="" className=""  />
                     <img src={introbg2} alt=""  className='w-100 h-130 relative top-40 right-50 '/>
                 </div>
                 <div className='lg:w-[40%]' data-aos="fade-left">
