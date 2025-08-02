@@ -19,11 +19,11 @@ export default function Apartment() {
             '>Choose Your Apartment Type</h1>
             </div>
             <div className='container mx-auto mt-5 mb-5 px-4 py-5'>
-                <div className='px-5 flex justify-between flex-wrap' data-aos="fade-up"    >
+                <div className='px-5 flex justify-between flex-wrap' data-aos="fade-up">
                     {
                         stays.map((item) => (
-                            <Link to={`/apartment/${item.id}`} className='apartmentCard1'   >
-                                <div className='cardpopUp'>
+                            <Link to={`/apartment/${item.id}`} className='apartmentCard1'>
+                                <div className='cardpopUp mb-[30px] w-[260px] h-[60px] text-[18px]'>
                                     <h2 className='text-white'>{item.title}</h2>
                                 </div>
                             </Link>

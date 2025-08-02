@@ -9,7 +9,7 @@ export default function Dine() {
         })
     }, [])
     return (
-        <div className='w-full bg-[#53624E] mt-5 flex justify-between flex-wrap '>
+        <div className='w-full bg-[#53624E] mt-8 flex justify-between flex-wrap '>
             <div className='lg:w-[50%]'>
                 <img src={dine} alt="" className='w-full h-200  relative bottom-15' data-aos="fade-right" />
             </div>

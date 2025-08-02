@@ -29,13 +29,12 @@ video {
 .apartmentCard1 {
   position: relative;
   width: 380px;
-  height: 500px;
+  height: 560px;
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   text-decoration: none; 
-  border-radius: 8px;
 }
 
 .apartmentCard1::before {
