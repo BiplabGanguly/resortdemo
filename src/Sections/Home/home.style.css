@@ -22,6 +22,7 @@ video {
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   pointer-events: none;
+  z-index: 10;
   /* So it doesn't interfere with video controls */
 }
 
@@ -79,4 +80,6 @@ video {
   transform: scale(0.96); /* zoom out (shrink) */
   opacity: 1;            /* fade to full opacity */
 }
+
+
 

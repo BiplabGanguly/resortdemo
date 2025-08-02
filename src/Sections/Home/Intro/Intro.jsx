@@ -1,5 +1,3 @@
-import React from 'react'
-import introbg from "../../../assets/img/introbg.avif"
 import introbg2 from "../../../assets/img/introbg2.avif"
 import aos from "aos"
 import { useEffect } from 'react'
@@ -17,7 +15,7 @@ export default function() {
                 <div className='lg:w-[48%] h-150 pl-[70px] flex' data-aos="fade-right">
                     <img src="https://static.wixstatic.com/media/7befdd_c0e59212d0a44a00baa5e3346777cc2f~mv2.jpg/v1/fit/w_304,h_224,q_90,enc_avif,quality_auto/7befdd_c0e59212d0a44a00baa5e3346777cc2f~mv2.jpg"
                      alt="" className="w-[488px] h-[650px]"  />
-                    <img src={introbg2} alt=""  className='w-[315px] h-[472px] relative top-60 right-50 '/>
+                    <img src={introbg2} alt=""  className='hidden md:block w-[315px] h-[472px] relative top-60 right-50 '/>
                 </div>
                 <div className='lg:w-[48%] mt-[70px]' data-aos="fade-left">
                     <h3 className='text-sm font-semibold tracking-widest text-yellow-200 my-2'>STAY IN THE HEART OF BELPAHARI</h3>
