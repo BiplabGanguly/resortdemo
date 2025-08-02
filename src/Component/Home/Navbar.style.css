@@ -1,0 +1,15 @@
+.carousalCustom{
+    width: 500px;
+    height: 500px;
+   
+}
+.LibraryBG{
+    width: 100%;
+    height: 200px;
+    background-color: #EDEBE4;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 20px ;
+
+}
