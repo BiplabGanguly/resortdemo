@@ -7,16 +7,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" shadow">
-      <div className="flex justify-between px-4 sm:px-6 lg:px-8 uppercase text-sm py-2 text-white max-w-7xl mx-auto">
+    <nav>
+      <div className="flex justify-between px-4 sm:px-6 lg:px-8 text-sm py-2 text-white max-w-7xl mx-auto pt-4 pb-4 border-b-[0.4px] border-[#6C6258]" >
         <div>
-          <h2 className="">
+          <h2 className="tracking-widest">
             Kuldiha, Near Kuldiha Bridge, Bamni, West Bengal 721501
           </h2>
         </div>
         <div>
-          <h2>
-            For Bookings & Inquiry
+          <h2 className="tracking-widest">
+            For Bookings & Inquiry : 
             +91 98833 56418,
             +91 03221 253229</h2>
         </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-white flex justify-center items-center ">
             <img src="https://static.wixstatic.com/shapes/7befdd_346a73cdd7934a978978b5f4f67e48bc.svg" alt="" className="size-30"/>
-              THE SALBARI
+              <span className="tracking-widest">The Salbari</span>
             </Link>
           </div>
 

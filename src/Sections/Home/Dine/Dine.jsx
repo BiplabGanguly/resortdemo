@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import dine from "../../assets/img/dine.avif"
+import dine from "../../../assets/img/dine.avif"
 import aos from 'aos'
 
 export default function Dine() {
@@ -11,9 +11,9 @@ export default function Dine() {
     return (
         <div className='w-full bg-[#53624E] mt-5 flex justify-between flex-wrap '>
             <div className='lg:w-[50%]'>
-                <img src={dine} alt="" className='w-full h-200  relative bottom-15' data-aos="fade-down" />
+                <img src={dine} alt="" className='w-full h-200  relative bottom-15' data-aos="fade-right" />
             </div>
-            <div className='lg:w-[40%] p-5 ' data-aos="fade-down">
+            <div className='lg:w-[48%] mt-[70px] p-5 ' data-aos="fade-left">
                 <br /><br />
                 <h3 className='text-yellow-200 text-sm'>The Salbari Restrurent
                     What Sets Us Apart</h3><br />

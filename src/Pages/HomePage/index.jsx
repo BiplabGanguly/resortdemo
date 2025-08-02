@@ -1,15 +1,14 @@
-import Apartment from "../../Component/Home/Apartment";
-import Banner from "../../Component/Home/Banner";
-import ChooseUS from "../../Component/Home/ChooseUS";
-import Dine from "../../Component/Home/Dine";
-import Intro from '../../Component/Home/Intro';
-import Service from "../../Component/Home/Service";
-import Video from "../../Component/Home/Video";
+import Apartment from "../../Sections/Home/Apartment/Apartment";
+import ChooseUS from "../../Sections/Home/ChooseUs/ChooseUS";
+import Dine from "../../Sections/Home/Dine/Dine";
+import Intro from '../../Sections/Home/Intro/Intro';
+import Service from "../../Sections/Home/Service/Service";
+import Video from "../../Sections/Home/Video/Video";
+import "../../Sections/Home/home.style.css"
 
 export default function index() {
   return (
     <div>
-      <Banner />
       {/* intro section code  */}
       <Intro />
       <br />

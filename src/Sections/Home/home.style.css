@@ -27,25 +27,38 @@ video {
 
 /* apartment css  */
 .apartmentCard1 {
+  position: relative;
   width: 380px;
   height: 500px;
-  background-image: url('../../assets/img/aprtment1.avif');
-  background-position: center;
-  background-size: cover;
+  overflow: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  transition: all 0.3s ease-in-out;
-
+  text-decoration: none; 
+  border-radius: 8px;
 }
+
+.apartmentCard1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../../assets/img/aprtment1.avif'); /* fallback */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.apartmentCard1:hover::before {
+  transform: scale(1.1);
+}
+
 
 .apartmentCard1:hover {
   .cardpopUp {
     background-color: #AA8B5F;
   }
-}
-.apartmentCard1:hover{
-  transform: scale(1.05);
 }
 
 .cardpopUp {
@@ -54,6 +67,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 
 }
 /* Initial fade-in effect when the element appears */

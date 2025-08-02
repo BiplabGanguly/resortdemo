@@ -1,9 +1,8 @@
 import React from 'react'
-import "./home.style.css"
 import aos from 'aos'
 // import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { stays }   from '../../ApartmentData';
+import { stays }   from '../../../ApartmentData';
 import { Link } from 'react-router-dom';
 export default function Apartment() {
     useEffect(() => {
@@ -12,15 +11,15 @@ export default function Apartment() {
         })
     }, [])
     return (
-        <div className='w-full'>
+        <div className='w-full h-[800px] pt-[60px]'>
             <div className='flex justify-center flex-col items-center'>
                 <h3 className='text-yellow-200 uppercase font-semibold text-sm mt-5 '>Extraordinary Accommodations</h3>
                 <h1 className='text-5xl text-white
               my-4
             '>Choose Your Apartment Type</h1>
             </div>
-            <div className='container mx-auto  mb-5 px-4 py-5'>
-                <div className='px-5 flex justify-evenly flex-wrap' data-aos="fade-up"    >
+            <div className='container mx-auto mt-5 mb-5 px-4 py-5'>
+                <div className='px-5 flex justify-between flex-wrap' data-aos="fade-up"    >
                     {
                         stays.map((item) => (
                             <Link to={`/apartment/${item.id}`} className='apartmentCard1'   >

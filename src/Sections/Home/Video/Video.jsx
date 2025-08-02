@@ -1,5 +1,5 @@
 import React from 'react'
-import "./home.style.css"
+import "../home.style.css"
 import { FaRegCirclePlay } from "react-icons/fa6";
 export default function Video() {
   return (
