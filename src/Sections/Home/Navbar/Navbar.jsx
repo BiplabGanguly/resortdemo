@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="text-white">
-      <div className="hidden md:flex justify-between px-4 sm:px-6 lg:px-8 text-sm py-2 border-b border-[#6C6258]">
+      <div className="hidden md:flex justify-between items-center px-25 lg:px-30 text-sm py-2 border-b border-[#6C6258] h-[60px]">
         <h2 className="tracking-widest">
           Kuldiha, Near Kuldiha Bridge, Bamni, West Bengal 721501
         </h2>
@@ -24,19 +24,19 @@ const Navbar = () => {
               <img
                 src="https://static.wixstatic.com/shapes/7befdd_346a73cdd7934a978978b5f4f67e48bc.svg"
                 alt="Logo"
-                className="w-10 h-10 object-contain size-30"
+                className="w-30 h-30 object-contain"
               />
-              <span className="text-2xl font-bold tracking-widest text-white">
+              <span className="text-2xl tracking-widest text-white">
                 The Salbari
               </span>
             </Link>
           </div>
 
-          <div className="hidden md:flex space-x-6 items-center">
-            <Link to="/" className="hover:text-yellow-400 transition">HOME</Link>
-            <Link to="/about" className="hover:text-yellow-400 transition">ABOUT</Link>
-            <Link to="/services" className="hover:text-yellow-400 transition">ROOMS</Link>
-            <Link to="/contact" className="hover:text-yellow-400 transition">CONTACT</Link>
+          <div className="hidden md:flex space-x-6 items-center text-[15px]">
+            <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
+            <Link to="/about" className="hover:text-yellow-400 transition">About</Link>
+            <Link to="/services" className="hover:text-yellow-400 transition">Rooms</Link>
+            <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
             <button className="px-4 py-2 border border-yellow-100 hover:bg-white hover:text-black transition">
               Check Availability
             </button>
@@ -54,11 +54,11 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden text-white px-4 pb-6 space-y-3">
-          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">HOME</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">ABOUT</Link>
-          <Link to="/services" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">ROOMS</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">CONTACT</Link>
+        <div className="md:hidden text-white px-4 pb-6 space-y-3 text-[14px]">
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">Home</Link>
+          <Link to="/about" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">About</Link>
+          <Link to="/services" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">Rooms</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">Contect</Link>
           <button className="w-full mt-2 px-4 py-2 border border-yellow-100 hover:bg-white hover:text-black transition">
             Check Availability
           </button>
