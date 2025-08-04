@@ -25,18 +25,18 @@ export default function Apartment() {
                             <Link
                                 key={item.id}
                                 to={`/apartment/${item.id}`}
-                                className='apartmentCard1'
-                                style={{
-                                    backgroundImage: `url(${item.img})`,
-                                    backgroundSize: 'cover',
-                                    backgroundPosition: 'center',
-                                    margin:'5px 0px'
-                                }}
+                                className="apartmentCard1"
+                                style={{ margin: '5px 0px' }}
                             >
-                                <div className='cardpopUp mb-[30px] w-[260px] h-[60px] text-[18px]'>
-                                    <h2 className='text-white'>{item.title}</h2>
+                                <div
+                                    className="apartmentBackground"
+                                    style={{ backgroundImage: `url(${item.img})` }}
+                                ></div>
+                                <div className="cardpopUp mb-[30px] w-[260px] h-[60px] text-[18px]">
+                                    <h2 className="text-white">{item.title}</h2>
                                 </div>
                             </Link>
+
                         ))
                     }
 
