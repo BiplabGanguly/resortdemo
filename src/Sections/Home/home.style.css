@@ -1,0 +1,100 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 25px 0px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  z-index: 10;
+  /* So it doesn't interfere with video controls */
+}
+
+/* apartment css  */
+.apartmentCard1 {
+  position: relative;
+  width: 380px;
+  height: 560px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.apartmentCard1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.apartmentCard1:hover::before {
+  transform: scale(1.1);
+}
+
+
+.apartmentCard1:hover {
+  .cardpopUp {
+    background-color: #AA8B5F;
+  }
+}
+
+.cardpopUp {
+  padding: 10px 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+
+}
+
+/* Initial fade-in effect when the element appears */
+.serviceImg {
+  opacity: 0.6;
+  /* semi-transparent initially */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.serviceImg:hover {
+  transform: scale(0.96);
+  /* zoom out (shrink) */
+  opacity: 1;
+  /* fade to full opacity */
+}
+
+
+/* testimonial code  */
+
+.MainSectionTestimonial {
+  width: 100%;
+  /* height: 600px; */
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("https://static.wixstatic.com/media/7befdd_edaad918e1d34514acab786273909977~mv2.jpg/v1/fill/w_948,h_449,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_2884_JPG.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+
+
+}
