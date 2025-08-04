@@ -38,19 +38,17 @@ video {
   text-decoration: none;
 }
 
-.apartmentCard1::before {
-  content: "";
+.apartmentBackground {
   position: absolute;
   inset: 0;
-
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
-  z-index: 0;
+  z-index: -1;
 }
 
-.apartmentCard1:hover::before {
+.apartmentCard1:hover .apartmentBackground {
   transform: scale(1.1);
 }
 
