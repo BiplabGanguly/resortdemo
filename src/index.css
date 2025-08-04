@@ -2,4 +2,5 @@
 body{
      font-family: "Marcellus SC", serif;
      background-color: #151719;
+     overflow-x:hidden;    
 }

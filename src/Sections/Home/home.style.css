@@ -35,14 +35,14 @@ video {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .apartmentCard1::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('../../assets/img/aprtment1.avif'); /* fallback */
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,16 +70,31 @@ video {
   z-index: 1;
 
 }
+
 /* Initial fade-in effect when the element appears */
 .serviceImg {
-  opacity: 0.6; /* semi-transparent initially */
+  opacity: 0.6;
+  /* semi-transparent initially */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .serviceImg:hover {
-  transform: scale(0.96); /* zoom out (shrink) */
-  opacity: 1;            /* fade to full opacity */
+  transform: scale(0.96);
+  /* zoom out (shrink) */
+  opacity: 1;
+  /* fade to full opacity */
 }
 
 
+/* testimonial code  */
 
+.MainSectionTestimonial {
+  width: 100%;
+  /* height: 600px; */
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("https://static.wixstatic.com/media/7befdd_edaad918e1d34514acab786273909977~mv2.jpg/v1/fill/w_948,h_449,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_2884_JPG.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px 0px;
+
+
+}

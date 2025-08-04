@@ -5,12 +5,13 @@ import Intro from '../../Sections/Home/Intro/Intro';
 import Service from "../../Sections/Home/Service/Service";
 import Video from "../../Sections/Home/Video/Video";
 import "../../Sections/Home/home.style.css"
+import Testmonial from "../../Sections/Testmonial/Testmonial";
 
 export default function index() {
   return (
     <div>
       {/* intro section code  */}
-      <Intro />
+      <Intro /> 
       <br />
       <br />
       <br />
@@ -28,6 +29,8 @@ export default function index() {
 
        {/* service section  */}
        <Service/>
+       {/* testmonial section code  */}
+       <Testmonial/>
     </div>
   )
 }

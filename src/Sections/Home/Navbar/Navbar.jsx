@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="text-white">
-      <div className="hidden md:flex justify-between items-center px-25 lg:px-30 text-sm py-2 border-b border-[#6C6258] h-[60px]">
+      <div className="hidden md:flex justify-between w-full items-center px-25 lg:px-30 text-sm py-2 border-b border-[#6C6258] h-[60px]">
         <h2 className="tracking-widest">
           Kuldiha, Near Kuldiha Bridge, Bamni, West Bengal 721501
         </h2>
