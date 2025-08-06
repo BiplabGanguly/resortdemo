@@ -34,20 +34,21 @@ export default function Video() {
   }, []);
 
   return (
-    <div className="video-container" onClick={handleTogglePlay}  aria-label={isPlaying ? 'Pause video' : 'Play video'}>
+    <div className="video-container" onClick={handleTogglePlay} aria-label={isPlaying ? 'Pause video' : 'Play video'}>
       <button className="logo-overlay">
         {!isPlaying ? (
-          <FaRegCirclePlay size={120} color="#fff" />
+          <FaRegCirclePlay size={100} color="#fff" />
         ) : null}
       </button>
       <video
         ref={videoRef}
         muted
         playsInline
-      // add loop if needed
+        // add loop if needed
+        poster="https://videocdn.cdnpk.net/videos/0bda3d2b-7d87-4040-9fd9-de90294e35b7/horizontal/thumbnails/large.jpg?uid=R153708199&amp;ga=GA1.1.910958514.1751544603&amp;item_id=2846622"
       >
         <source
-          src="https://videocdn.cdnpk.net/videos/f6ef5560-0fd4-43d4-94ad-820eb773419e/horizontal/previews/clear/large.mp4?token=exp=1754161156~hmac=42e84a35c96468be1ebdced9d69dbdd120b71bfd1c6d1fae59820f8e044da9a8"
+          src="https://videocdn.cdnpk.net/videos/0bda3d2b-7d87-4040-9fd9-de90294e35b7/horizontal/previews/clear/large.mp4?token=exp=1754492503~hmac=c6b61d748a7c5cd0d96de6a949809eb19e6a90ce3a3a66430067bce79cb3f1e4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -56,3 +57,4 @@ export default function Video() {
 
   );
 }
+{/* <video width="1280" height="720" controls="" controlslist="nodownload" playsinline="" autoplay="" loop="" class="absolute inset-0 block h-full max-w-full overflow-hidden w-full object-cover" aria-hidden="true"><source type="video/mp4"></video> */ }

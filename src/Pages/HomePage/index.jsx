@@ -1,5 +1,6 @@
 import Apartment from "../../Sections/Home/Apartment/Apartment";
 import ChooseUS from "../../Sections/Home/ChooseUs/ChooseUS";
+// import Address from "../../Sections/Home/Details/Address";
 import Dine from "../../Sections/Home/Dine/Dine";
 import Intro from '../../Sections/Home/Intro/Intro';
 import Service from "../../Sections/Home/Service/Service";
@@ -30,7 +31,9 @@ export default function index() {
        {/* service section  */}
        <Service/>
        {/* testmonial section code  */}
-       <Testmonial/>
+       <Testmonial/><br /><br /><br />
+       {/* < Address and Map section > */}
+       {/* <Address/> */}
     </div>
   )
 }
