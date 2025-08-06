@@ -3,6 +3,7 @@ import "./Banner.style.css"
 import Navbar from '../Navbar/Navbar'
 import aos from 'aos'
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 export default function Banner() {
   useEffect(() => {
@@ -20,8 +21,10 @@ export default function Banner() {
             <h3 className='text-xs text-yellow-300 font-semibold tracking-widest' data-aos="zoom-in-down">WELCOME TO THE SALBARI RESORT & RESTAURANT </h3>
           </div>
           <div className='flex justify-center items-center ' data-aos="zoom-in-up">
-            <h2 className='text-white md:text-8xl text-5xl text-center'>Where forest whisper <br /> &  luxury listen</h2>
+            <h2 className='text-white lg:text-8xl text-5xl text-center'>Where forest whisper <br /> &  luxury listen</h2>
+        
           </div>
+              <Link to="/RoomBooking" className='font-serif rounded shadow cursor-pointer bg-white p-3 mt-5 '>Start Booking</Link>
         </div>
 
       </div>

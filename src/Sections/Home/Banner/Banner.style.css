@@ -1,9 +1,9 @@
 .BannerImg {
-  background-image: 
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),
-    url("https://cozystay.loftocean.com/apartment/wp-content/uploads/sites/6/2023/03/img-32.jpg");
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
+    url("https://static.wixstatic.com/media/7befdd_b79e00bdb2f14e15a8ac462c8fbe1d14~mv2.jpg/v1/fill/w_578,h_730,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_2578_JPG.jpg");
   width: 100%;
-  height: 800px;
+  height: 740px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

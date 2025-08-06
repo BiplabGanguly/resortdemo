@@ -19,18 +19,18 @@ export default function Apartment() {
             '>Choose Your Apartment Type</h1>
             </div>
             <div className='container mx-auto mt-5 mb-5 px-4 py-5'>
-                <div className='px-5 flex justify-around items-center  gap-5  flex-wrap ' data-aos="fade-up">
+                <div className='px-5 flex justify-around   gap-5  flex-wrap ' data-aos="fade-up">
                     {
                         stays.map((item) => (
                             <Link
                                 key={item.id}
                                 to={`/apartment/${item.id}`}
-                                className="apartmentCard1"
+                                className="apartmentCard1 lg:w-[380px] h-[460px] md:w-[280px] md:h-[300px] w-full "
                                 style={{ margin: '5px 0px' }}
                             >
                                 <div
                                     className="apartmentBackground"
-                                    style={{ backgroundImage: `url(${item.img})` }}
+                                    style={{ backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url(${item.img})` }}
                                 ></div>
                                 <div className="cardpopUp mb-[30px] w-[260px] h-[60px] text-[18px]">
                                     <h2 className="text-white">{item.title}</h2>

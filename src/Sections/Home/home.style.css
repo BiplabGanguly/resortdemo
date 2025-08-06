@@ -29,13 +29,14 @@ video {
 /* apartment css  */
 .apartmentCard1 {
   position: relative;
-  width: 380px;
-  height: 560px;
+  /* width: 380px;
+  height: 460px; */
   overflow: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   text-decoration: none;
+  border-radius: 7px;
 }
 
 .apartmentBackground {
@@ -94,5 +95,14 @@ video {
   background-position: center;
   margin: 20px 0px;
 
+
+}
+
+
+/* address section css / */
+.addressBG{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("https://static.wixstatic.com/media/7befdd_b79e00bdb2f14e15a8ac462c8fbe1d14~mv2.jpg/v1/fill/w_432,h_546,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_2578_JPG.jpg");
+  background-size: cover;
+  background-position: center;
 
 }

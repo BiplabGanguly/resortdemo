@@ -34,7 +34,7 @@ export default function Testmonial() {
             <div className='MainSectionTestimonial h-130'>
                 <div className='lg:w-200 m-5 p-5'>
                     <h2 className='text-2xl  text-yellow-200 mb-3'>A Note from the Founders</h2>
-                    <span className='text-gray-300 lg:text-3xl  '>"We created Salbari not as a business, but as a place where people could pause, breathe, and rediscover simplicity. It's our way of preserving tradition, celebrating the forest, and welcoming you like family."</span>
+                    <span className='text-gray-300 lg:text-2xl  '>"We created Salbari not as a business, but as a place where people could pause, breathe, and rediscover simplicity. It's our way of preserving tradition, celebrating the forest, and welcoming you like family."</span>
                 </div>
                 <div className='lg:w-[70%] w-full  bg-[#53624E] absolute right-0 flex flex-wrap' >
                     <div className='lg:w-[50%] w-full'>
