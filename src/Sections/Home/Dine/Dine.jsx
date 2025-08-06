@@ -10,10 +10,10 @@ export default function Dine() {
     }, [])
     return (
         <div className='w-full bg-[#53624E] mt-8 flex justify-between items-center flex-wrap '>
-            <div className='lg:w-[50%] w-full'>
-                <img src={dine} alt="" className='w-full h-200  relative bottom-15' data-aos="fade-right" />
+            <div className='lg:w-[45%] md:w-[50%] w-full'>
+                <img src={dine} alt="" className='w-full h-160  relative bottom-15' data-aos="fade-right" />
             </div>
-            <div className='lg:w-[48%]  p-7 ' data-aos="fade-left">
+            <div className='lg:w-[48%] md:w-[45%] p-7 ' data-aos="fade-left">
                 <br /><br />
                 <h3 className='text-yellow-200 text-sm'>The Salbari Restrurent
                     What Sets Us Apart</h3><br />

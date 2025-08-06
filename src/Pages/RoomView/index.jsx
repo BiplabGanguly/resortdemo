@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import RoomHeader from '../../Sections/RoomView/RoomHeader'
 import RoomFacility from '../../Sections/RoomView/RoomFacility'
 import { FaWifi } from "react-icons/fa";
@@ -9,6 +9,10 @@ import { MdOutlineBathroom } from "react-icons/md";
 import { GiGardeningShears } from "react-icons/gi";
 import { TbAirConditioning } from "react-icons/tb";
 export default function index() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0) // default page view from top
+  }, [])
   const facilityData = [
     {
       id: 1,

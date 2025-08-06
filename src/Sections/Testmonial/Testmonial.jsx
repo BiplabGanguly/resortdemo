@@ -36,7 +36,7 @@ export default function Testmonial() {
                     <h2 className='text-2xl  text-yellow-200 mb-3'>A Note from the Founders</h2>
                     <span className='text-gray-300 lg:text-2xl  '>"We created Salbari not as a business, but as a place where people could pause, breathe, and rediscover simplicity. It's our way of preserving tradition, celebrating the forest, and welcoming you like family."</span>
                 </div>
-                <div className='lg:w-[70%] w-full  bg-[#53624E] absolute right-0 flex flex-wrap' >
+                <div className='lg:w-[70%] md:w-[60%] w-full  bg-[#53624E] absolute right-0 flex flex-wrap' >
                     <div className='lg:w-[50%] w-full'>
                         <img src="https://static.wixstatic.com/media/7befdd_aee8dfa09c904da1af61326018f62230~mv2.jpg/v1/fill/w_826,h_508,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/walking-6580711_1280.jpg" alt="" />
                     </div>

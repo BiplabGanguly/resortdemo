@@ -37,9 +37,9 @@ const Navbar = () => {
             <Link to="/about" className="hover:text-yellow-400 transition">About</Link>
             <Link to="/services" className="hover:text-yellow-400 transition">Rooms</Link>
             <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
-            <button className="px-4 py-2 border border-yellow-100 hover:bg-white hover:text-black transition">
+            {/* <button className="px-4 py-2 border border-yellow-100 hover:bg-white hover:text-black transition">
               Check Availability
-            </button>
+            </button> */}
           </div>
 
           <div className="md:hidden">

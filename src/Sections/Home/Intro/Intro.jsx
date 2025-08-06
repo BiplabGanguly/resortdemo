@@ -20,8 +20,8 @@ export default function() {
                 </div>
                 <div className='lg:w-[48%] md:w-[50%]  w-full ' data-aos="fade-left">
                     <h3 className='text-sm font-semibold tracking-widest text-yellow-200 my-2'>STAY IN THE HEART OF BELPAHARI</h3>
-                    <h2 className='lg:text-6xl text-2xl text-white tracking-wider mt-5 '>Where Nature Nurtures and Tradition Lives On</h2>
-                    <p className='text-gray-400 tracking-wider mt-5 lg:text-xl md:text-sm font-serif'>Salbari Resort is more than just a place to stay — it’s a return to what truly matters. Nestled deep within Bengal’s ancient Sal forest, 
+                    <h2 className='lg:text-5xl text-2xl text-white tracking-wider mt-5 '>Where Nature Nurtures and Tradition Lives On</h2>
+                    <p className='text-gray-400 tracking-wider mt-5 lg:text-lg md:text-sm font-serif'>Salbari Resort is more than just a place to stay — it’s a return to what truly matters. Nestled deep within Bengal’s ancient Sal forest, 
                       our retreat is built on a love for nature, tribal heritage, and soulful living. Every mud wall, stone path, 
                       and forest trail reflects a quiet promise: to offer guests an experience that is authentic, immersive, 
                       and deeply rejuvenating. Whether you come seeking stillness or stories, we welcome you with warmth,

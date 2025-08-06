@@ -24,7 +24,7 @@ export default function Banner() {
             <h2 className='text-white lg:text-8xl text-5xl text-center'>Where forest whisper <br /> &  luxury listen</h2>
         
           </div>
-              <Link to="/RoomBooking" className='font-serif rounded shadow cursor-pointer bg-white p-3 mt-5 '>Start Booking</Link>
+              <Link to="/RoomBooking" className='font-serif text-white text-md rounded shadow cursor-pointer bg-yellow-700 p-3 mt-5 '>Start Booking</Link>
         </div>
 
       </div>
