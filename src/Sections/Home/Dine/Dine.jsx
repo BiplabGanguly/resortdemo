@@ -11,7 +11,7 @@ export default function Dine() {
     return (
         <div className='w-full bg-[#53624E] mt-8 flex justify-between items-center flex-wrap '>
             <div className='lg:w-[45%] md:w-[50%] w-full'>
-                <img src={dine} alt="" className='w-full h-160  relative bottom-15' data-aos="fade-right" />
+                <img src={dine} alt="" className='w-full lg:h-160 h-100 relative bottom-15' data-aos="fade-right" />
             </div>
             <div className='lg:w-[48%] md:w-[45%] p-7 ' data-aos="fade-left">
                 <br /><br />

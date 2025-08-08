@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { LiaRupeeSignSolid } from "react-icons/lia";
 import { stays } from "../../ApartmentData"
 import { FiPhoneCall } from "react-icons/fi";
-
+import { Link } from 'react-router-dom';
 export default function RoomHeader() {
     const { id } = useParams();
     const [singleRoom, setsingleRoom] = useState()
@@ -43,9 +43,12 @@ export default function RoomHeader() {
                             <li className='text-white font-serif'>Beds : {singleRoom?.bedType} </li>
                             <li className='text-white font-serif'>Inclusions : {singleRoom?.inclusions} </li>
                             <li className='text-white font-serif'>Highlight : {singleRoom?.highlight} </li>
-                        </ul>
-                        <h3 className='text-white text-sm my-4 flex gap-4'>
-                            <FiPhoneCall size={30} color='white' /> +91 9883356418 / +91 03221 253229</h3>
+                        </ul> <br />
+                        <Link to={`/bookroom/${singleRoom?.id}`} className='font-serif text-white text-md
+                             rounded shadow cursor-pointer 
+                             border border-yellow-600
+                           hover:bg-amber-200 hover:text-black
+                            px-4 py-3 mt-5'>Book Now</Link>
 
                     </div>
                 </div>
