@@ -4,6 +4,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import "./testmonial.style.css"
 export default function Testmonial() {
     const testimonials = [
         {
@@ -45,7 +46,7 @@ export default function Testmonial() {
                             modules={[Pagination]}
                             spaceBetween={30}
                             slidesPerView={1}
-
+                            className='custom-swipe'
                             pagination={{ clickable: true }}
                         // navigation
                         >
