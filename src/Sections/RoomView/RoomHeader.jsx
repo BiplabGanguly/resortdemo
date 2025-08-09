@@ -4,12 +4,18 @@ import { LiaRupeeSignSolid } from "react-icons/lia";
 import { stays } from "../../ApartmentData"
 import { FiPhoneCall } from "react-icons/fi";
 import { Link } from 'react-router-dom';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 export default function RoomHeader() {
     const { id } = useParams();
     const [singleRoom, setsingleRoom] = useState()
     useEffect(() => {
         const filterRoomData = stays.find((item) => item.id.toString() === id);
         setsingleRoom(filterRoomData);
+        // console.log(filterRoomData)
     }, [])
 
     return (
@@ -27,12 +33,41 @@ export default function RoomHeader() {
             {/* Actual Room Category Sectiton  */}
             <div className="container-lg mx-auto p-6 ">
                 <div className='flex justify-center items-center pt-[70px] flex-wrap lg:gap-10 gap-7 '>
-                    <div className='lg:w-[40%] w-full flex  ' >
-                        <img src={singleRoom?.img}
-                            alt="" className="w-full lg:h-[380px] h-80 " />
+                    <div className='lg:w-[50%] w-full flex  ' >
+
+                        <Swiper
+                            modules={[Pagination, Autoplay]}
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            className='custom-swipe'
+                            pagination={{ clickable: true }}
+                            autoplay={{
+                                delay: 2000, // Time in ms between slides
+                                disableOnInteraction: false, // Keeps autoplay running after user interaction
+                            }}
+                            loop={true} // Enables continuous loop mode
+
+                        // navigation
+                        >
+                            {singleRoom?.innerImg.map((testimonial, index) => (
+                                <SwiperSlide key={index}>
+                                    <div style={{
+                                        color: "white",
+                                        // background: '#f8f8f8',
+                                        padding: '30px',
+                                        borderRadius: '10px',
+                                        // boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
+                                    }}>
+                                        <img src={testimonial?.url}
+                                            alt="" className="w-full lg:h-[400px] h-80 " />
+
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
                         {/* <img src={introbg2} alt="" className='hidden md:block w-[315px] h-[472px] relative top-60 right-50 ' /> */}
                     </div>
-                    <div className='lg:w-[48%] p-5'>
+                    <div className='lg:w-[45%] p-5'>
                         <h3 className='text-sm font-semibold tracking-widest text-yellow-200 my-2'>STAY IN THE HEART OF BELPAHARI</h3>
                         <h2 className='lg:text-5xl text-2xl text-white tracking-wider mt-5 '>{singleRoom?.title}</h2>
                         <p className='text-gray-300 font-serif mt-5 mb-4'>{singleRoom?.des}  </p>

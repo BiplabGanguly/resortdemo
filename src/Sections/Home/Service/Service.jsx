@@ -13,7 +13,7 @@ export default function Service() {
                     <div className='lg:w-[45%] md:w-[45%] w-full '>
                         <img src={nature} alt="" className='w-full h-80 serviceImg' />
                     </div>
-                    <div className=' lg:px-8 lg:w-[45%] md:w-[45%] w-full' data-aos="fade-left">
+                    <div className=' lg:px-8 p-5 lg:w-[45%] md:w-[45%] w-full' data-aos="fade-left">
                         <h3 className='text-yellow-200 text-2xl'>Nature at Your Doorstep</h3><br />
                         <p className=' text-md text-gray-400 font-serif '>
                             Wake up to birdsong, sip tea with forest views, and explore scenic trails, lakes, and waterfalls nearby.</p>

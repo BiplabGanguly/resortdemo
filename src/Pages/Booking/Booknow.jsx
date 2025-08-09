@@ -78,7 +78,7 @@ export default function Booknow() {
     useEffect(() => {
         const filterRoomData = stays.find((item) => item.id.toString() === id);
         setdata(filterRoomData);
-         window.scrollTo(100, 620) // default page view from top
+        window.scrollTo(100, 620);
 
     }, [])
     return (
@@ -87,11 +87,8 @@ export default function Booknow() {
                 <div className='lg:w-[60%]  w-full px-3'>
                     <h2 className='text-white text-3xl my-2'>{data?.title}</h2>
                     <h2 className='text-yellow-600 text-md my-3 font-serif'>{data?.tagline}</h2><br />
-
-
                     <p className='text-gray-400 font-serif text-md p-3'>{data?.des}</p><br />
-              
-                    <ul className='flex flex-col gap-3'>
+                    <ul className='flex flex-col gap-3 px-3'>
                         <li className='text-white font-serif flex gap-3'><IoBedOutline size={25} color='white' />No of Rooms : {data?.numberOfRooms} </li>
                         <li className='text-white font-serif flex'><HiOutlineDocumentCurrencyRupee size={25} />Rate :<LiaRupeeSignSolid /> {data?.ratePerRoom} </li>
                         <li className='text-white font-serif flex gap-3'><FaUserFriends size={25} color='white' />Occupancy : {data?.occupancy} </li>
@@ -130,8 +127,6 @@ export default function Booknow() {
                             <button className='bg-[#B99D75] p-3 w-full my-3 font-semibold cursor-pointer'>Book Now</button>
                         </div>
                     </form>
-
-
                 </div>
             </div>
             {/* <room facility component */}
