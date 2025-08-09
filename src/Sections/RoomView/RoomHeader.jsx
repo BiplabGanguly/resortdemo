@@ -36,11 +36,11 @@ export default function RoomHeader() {
                     <div className='lg:w-[50%] w-full flex  ' >
 
                         <Swiper
-                            modules={[Pagination, Autoplay]}
+                            modules={[ Autoplay]}
                             spaceBetween={30}
                             slidesPerView={1}
                             className='custom-swipe'
-                            pagination={{ clickable: true }}
+                            // pagination={{ clickable: true }}
                             autoplay={{
                                 delay: 2000, // Time in ms between slides
                                 disableOnInteraction: false, // Keeps autoplay running after user interaction
@@ -81,8 +81,8 @@ export default function RoomHeader() {
                         </ul> <br />
                         <Link to={`/bookroom/${singleRoom?.id}`} className='font-serif text-white text-md
                              rounded shadow cursor-pointer 
-                             border border-yellow-600
-                           hover:bg-amber-200 hover:text-black
+                             border border-[#B99D75]
+                           hover:bg-[#B99D75] hover:text-black
                             px-4 py-3 mt-5'>Book Now</Link>
 
                     </div>

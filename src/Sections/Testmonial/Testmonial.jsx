@@ -47,11 +47,11 @@ export default function Testmonial() {
                     </div>
                     <div className='lg:w-[50%] w-full flex justify-center items-center '>
                         <Swiper
-                            modules={[Pagination,Autoplay]}
+                            modules={[Autoplay]}
                             spaceBetween={30}
                             slidesPerView={1}
                             className='custom-swipe'
-                            pagination={{ clickable: true }}
+                            // pagination={{ clickable: true }}
                                autoplay={{
                                 delay: 2000, // Time in ms between slides
                                 disableOnInteraction: false, // Keeps autoplay running after user interaction
