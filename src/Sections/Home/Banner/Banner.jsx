@@ -28,11 +28,11 @@ export default function Banner() {
             <form action="" className=' border border-white w-[80%] lg:w-full mt-5 p-3 mx-auto   pb-4 flex flex-wrap  '>
               <div>
                 <label htmlFor="" className='text-white text-md'>Check In </label>
-                <input type="date" placeholder='check in ' className='border border-yellow-600 text-white px-6 py-3 w-full' />
+                <input type="date"   defaultValue="2025-08-09" className='border border-yellow-600 text-white px-6 py-3 w-full' />
               </div>
               <div >
                 <label htmlFor="" className='text-white text-sm'>Check out</label>
-                <input type="date" placeholder='check out ' className='border border-yellow-600 text-white px-6 py-3 w-full ' />
+                <input type="date"  defaultValue="2025-08-09"  className='border border-yellow-600 text-white px-6 py-3 w-full ' />
 
               </div>
               <div>
