@@ -6,7 +6,6 @@ export const MainLayout = () => (
     <>
         <Banner />
         <Outlet />
-        <br /><br /><br />
         <Address/>
         <Footer/>
     </>

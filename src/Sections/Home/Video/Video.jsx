@@ -48,7 +48,7 @@ export default function Video() {
         poster="https://videocdn.cdnpk.net/videos/0bda3d2b-7d87-4040-9fd9-de90294e35b7/horizontal/thumbnails/large.jpg?uid=R153708199&amp;ga=GA1.1.910958514.1751544603&amp;item_id=2846622"
       >
         <source
-          src="https://videocdn.cdnpk.net/videos/0bda3d2b-7d87-4040-9fd9-de90294e35b7/horizontal/previews/clear/large.mp4?token=exp=1754492503~hmac=c6b61d748a7c5cd0d96de6a949809eb19e6a90ce3a3a66430067bce79cb3f1e4"
+          src="https://drive.google.com/file/d/1roCbUrhufy3NXd7gu4-bFbq3YQp_Y8wf/view"
           type="video/mp4"
         />
         Your browser does not support the video tag.

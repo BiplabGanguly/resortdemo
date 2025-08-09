@@ -34,12 +34,10 @@ const Navbar = () => {
 
           <div className="hidden md:flex space-x-6 items-center text-[15px]">
             <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
-            <Link to="/about" className="hover:text-yellow-400 transition">About</Link>
-            <Link to="/services" className="hover:text-yellow-400 transition">Rooms</Link>
-            <Link to="/contact" className="hover:text-yellow-400 transition">Contact</Link>
-            {/* <button className="px-4 py-2 border border-yellow-100 hover:bg-white hover:text-black transition">
-              Check Availability
-            </button> */}
+            <Link to="/" className="hover:text-yellow-400 transition">About</Link>
+            <Link to="/" className="hover:text-yellow-400 transition">Rooms</Link>
+            <Link to="/" className="hover:text-yellow-400 transition">Contact</Link>
+
           </div>
 
           <div className="md:hidden">
@@ -53,17 +51,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      {isOpen && (
-        <div className="md:hidden text-white px-4 pb-6 space-y-3 text-[14px]">
-          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">Home</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">About</Link>
-          <Link to="/services" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">Rooms</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400">Contect</Link>
-          <button className="w-full mt-2 px-4 py-2 border border-yellow-100 hover:bg-white hover:text-black transition">
-            Check Availability
-          </button>
+     
+        <div
+          className={`md:hidden text-center overflow-hidden transition-all duration-300  ease-in-out px-4 text-white text-[14px] space-y-3 ${isOpen ? 'h-full opacity-100 pt-4 pb-6' : 'max-h-0 opacity-0 py-0'
+            }`}
+        >
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">Home</Link>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">About</Link>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">Rooms</Link>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">Contact</Link>
         </div>
-      )}
+
+      
     </nav>
   );
 };
