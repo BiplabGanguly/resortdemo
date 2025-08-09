@@ -14,9 +14,9 @@ export default function() {
        <div className="container-lg mx-auto p-6 ">
             <div className='flex justify-center items-center pt-[70px] flex-wrap lg:gap-10 gap-7 '>
                 <div className='lg:w-[44%] md:w-[40%]  w-full flex ' data-aos="fade-right">
-                    <img src="https://static.wixstatic.com/media/7befdd_c0e59212d0a44a00baa5e3346777cc2f~mv2.jpg/v1/fit/w_304,h_224,q_90,enc_avif,quality_auto/7befdd_c0e59212d0a44a00baa5e3346777cc2f~mv2.jpg"
+                    <img src={introbg2}
                      alt="" className="lg:w-[488px]  lg:h-[650px] h-80 "  />
-                    <img src={introbg2} alt=""  className='hidden  lg:block lg:w-[315px]  h-[472px] relative top-60 right-50  '/>
+                    <img src="https://static.wixstatic.com/media/7befdd_e300f5339575423fb82f75b4658179fd~mv2.jpg/v1/fit/w_640,h_480,q_90,enc_avif,quality_auto/7befdd_e300f5339575423fb82f75b4658179fd~mv2.jpg" alt=""  className='hidden  lg:block lg:w-[315px]  h-[442px] relative top-60 right-50  '/>
                 </div>
                 <div className='lg:w-[48%] md:w-[50%]  w-full ' data-aos="fade-left">
                     <h3 className='text-sm font-semibold tracking-widest text-yellow-200 my-2'>STAY IN THE HEART OF BELPAHARI</h3>
