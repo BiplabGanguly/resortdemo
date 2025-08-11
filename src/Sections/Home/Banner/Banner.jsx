@@ -15,21 +15,21 @@ export default function Banner() {
   }, [])
   return (
     <>
-      <div className='BannerImg'>
+      <div className='BannerImg overflow-x-hidden'>
         <Navbar />
         {/* hero section */}
         <div className=' flex  w-full flex-col justify-center items-center flex-wrap  h-[530px]'>
           <div>
-            <h3 className='text-xs text-yellow-300 font-semibold tracking-widest' data-aos="zoom-in-down">WELCOME TO THE SALBARI RESORT & RESTAURANT </h3>
+            <h3 className='text-xs lg:text-sm text-[#B89D75] tracking-widest' data-aos="zoom-in-down">WELCOME TO THE SALBARI RESORT & RESTAURANT </h3>
           </div>
           <div className='flex justify-center items-center ' data-aos="zoom-in-up">
-            <h2 className='text-white lg:text-8xl text-3xl text-center'>Where forest whisper <br /> &  luxury listen</h2>
-
+            <h2 className='text-white text-center text-stroke text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] break-words'>
+              Where forest whisper <br /> &  luxury listen</h2>
           </div>
           {
             path.pathname === "/" ? (
-              <div className=' w-[80%] '><br />
-                <form action="" className=' border border-[#897862] mt-5 mx-auto  p-2 flex flex-wrap  gap-4'>
+              <div className=' w-[80%] ' data-aos="zoom-in-down"><br />
+                <form action="" className=' border border-[#897862] mt-5 mx-auto p-1 flex flex-wrap justify-around gap-1 '>
                   <div className=' flex items-center justify-center gap-4 border border-[#897862] lg:w-[35%]  w-full flex-wrap'>
                     <div>
                       <label htmlFor="" className='text-white text-md '>Check In </label>
@@ -44,19 +44,20 @@ export default function Banner() {
                     </div>
                     <div>
                       <input type="date" defaultValue="2025-08-09" className=' text-white p-3  w-full outline-none' />
-
                     </div>
 
                   </div>
                   <div className='lg:w-[25%] w-full '>
 
-                    <button className='text-black
-                 bg-white px-6 py-3 border
-                  border-yellow-50 cursor-pointer
-                   hover:bg-white hover:text-black 
-                   
+                    <button className='text-white
+                 bg-transparent px-6 py-3 border
+                  border-[#897862] cursor-pointer
+                   hover:bg-[#AB916C] 
+                   transitions
+                   duration-400
+                   ease-in-out
                    w-full
-                   '>Check Now</button>
+                   '>Check Availability</button>
 
                   </div>
 

@@ -18,13 +18,16 @@ export default function Dine() {
                 <h3 className='text-yellow-200 text-sm'>The Salbari Restrurent
                     What Sets Us Apart</h3><br />
                 <h2 className='text-5xl text-white '>Dine at Salbari Restaurant </h2>
-                <p className='text-gray-200 mt-5'>
+                <p className='text-gray-300 mt-5 text-justify font-serif'>
                     At Salbari Restaurant, every meal is an experience steeped in tradition and taste. Set in the heart of the forest, our kitchen serves up soulful local cuisine, crafted with fresh ingredients and love. From rustic flavours to regional specialties, each dish is a celebration of Bengal’s culinary heritage.
                 </p>
                 <button className="px-3 py-2 border
               cursor-pointer
               border-yellow-100
                text-white hover:bg-white hover:text-gray-600 
+            transitions
+            duration-400
+            ease-in-out 
                my-5
                ">Start Exploring</button>
             </div>

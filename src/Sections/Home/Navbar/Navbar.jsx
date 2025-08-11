@@ -33,10 +33,10 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex space-x-6 items-center text-[15px]">
-            <Link to="/" className="hover:text-yellow-400 transition">Home</Link>
-            <Link to="/" className="hover:text-yellow-400 transition">About</Link>
-            <Link to="/" className="hover:text-yellow-400 transition">Rooms</Link>
-            <Link to="/" className="hover:text-yellow-400 transition">Contact</Link>
+            <Link to="/" className="hover:text-[#B89D75] transition">Home</Link>
+            <Link to="/" className="hover:text-[#B89D75] transition">About</Link>
+            <Link to="/" className="hover:text-[#B89D75] transition">Rooms</Link>
+            <Link to="/" className="hover:text-[#B89D75] transition">Contact</Link>
 
           </div>
 
@@ -56,10 +56,10 @@ const Navbar = () => {
           className={`md:hidden text-center overflow-hidden transition-all duration-300  ease-in-out px-4 text-white text-[14px] space-y-3 ${isOpen ? 'h-full opacity-100 pt-4 pb-6' : 'max-h-0 opacity-0 py-0'
             }`}
         >
-          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">Home</Link>
-          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">About</Link>
-          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">Rooms</Link>
-          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-yellow-400 text-xl">Contact</Link>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-[#B89D75] transition text-xl">Home</Link>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-[#B89D75] transition text-xl">About</Link>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-[#B89D75] transition text-xl">Rooms</Link>
+          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-[#B89D75] transition text-xl">Contact</Link>
         </div>
 
       

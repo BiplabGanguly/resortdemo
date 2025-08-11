@@ -23,7 +23,7 @@ export default function Address() {
                 </div>
                 <div className='lg:w-[50%] w-full flex justify-center items-center  addressBG'>
                     <div className='text-center' >
-                        <h2 className='text-md text-yellow-400 '>our Location</h2>
+                        <h2 className='text-md text-[#AB916C] '>our Location</h2>
                         <h1 className='text-white text-2xl'>The Salbari Resort & Restaurant</h1>
                         <h2 className='text-white text-xl my-2'>Kuldiha, Kodopal, Belpahari, Midnapore,West Bengal, PIN: 721501</h2>
                         <h3 className='text-white text-sm my-2'>+91 9883356418 / +91 03221 253229</h3>
