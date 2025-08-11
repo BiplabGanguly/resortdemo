@@ -8,10 +8,10 @@ export default function ChooseUS() {
 
       <div className='lg:w-[50%] w-full p-5' data-aos="fade-down">
         <br /><br />
-        <h3 className='text-yellow-200 text-sm'>The Salbari Restrurent
+        <h3 className='text-[#AB916C] text-sm'>The Salbari Restrurent
           What Sets Us Apart</h3><br />
         <h2 className='lg:text-5xl text-2xl text-white '>Dine at Salbari Restaurant </h2>
-        <p className='text-gray-200 mt-5 text-sm'>
+        <p className='text-gray-300 mt-5 text-sm font-serif text-justify'>
           At Salbari Restaurant, every meal is an experience steeped in tradition and taste. Set in the heart of the forest, our kitchen serves up soulful local cuisine, crafted with fresh ingredients and love. From rustic flavours to regional specialties, each dish is a celebration of Bengal’s culinary heritage.
         </p>
         <ExploreBtn />

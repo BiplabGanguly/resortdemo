@@ -38,8 +38,8 @@ export default function Testmonial() {
             <br /><br />
             <div className='MainSectionTestimonial h-130'>
                 <div className='lg:w-200 m-5 p-5'>
-                    <h2 className='text-2xl  text-yellow-200 mb-3'>A Note from the Founders</h2>
-                    <span className='text-gray-300 lg:text-2xl  '>"We created Salbari not as a business, but as a place where people could pause, breathe, and rediscover simplicity. It's our way of preserving tradition, celebrating the forest, and welcoming you like family."</span>
+                    <h2 className='text-2xl  text-[#AB916C] mb-3'>A Note from the Founders</h2>
+                    <span className='text-gray-300 lg:text-lg text-justify font-serif'>"We created Salbari not as a business, but as a place where people could pause, breathe, and rediscover simplicity. It's our way of preserving tradition, celebrating the forest, and welcoming you like family."</span>
                 </div>
                 <div className='lg:w-[70%] md:w-[60%] w-full  bg-[#53624E] absolute right-0 flex flex-wrap ' >
                     <div className='lg:w-[50%] w-full bg-[url("https://static.wixstatic.com/media/7befdd_dbf51800330b4fc592019cb900c09c51~mv2.jpg/v1/fit/w_854,h_480,q_90,enc_avif,quality_auto/7befdd_dbf51800330b4fc592019cb900c09c51~mv2.jpg")] bg-cover '>
@@ -50,7 +50,7 @@ export default function Testmonial() {
                             modules={[Autoplay]}
                             spaceBetween={30}
                             slidesPerView={1}
-                            className='custom-swipe'
+                            className='custom-swipe flex justify-center items-center'
                             // pagination={{ clickable: true }}
                                autoplay={{
                                 delay: 2000, // Time in ms between slides
@@ -73,7 +73,7 @@ export default function Testmonial() {
                                         // boxShadow: '0 4px 8px rgba(0,0,0,0.1)'
                                     }}>
                                         <img src={testimonial?.img} alt="" className='size-22 rounded-full'/>
-                                        <p style={{ fontStyle: '' }} className='text-2xl'>"{testimonial.message}"</p>
+                                        <p style={{ fontStyle: '' }} className='text-xl'>"{testimonial.message}"</p>
                                         <h4 style={{ marginTop: '20px' }} className='text-lg'>{testimonial.name}</h4>
                                         <small>{testimonial.role}</small>
                                     </div>

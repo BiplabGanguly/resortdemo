@@ -86,11 +86,11 @@ export default function Booknow() {
             <div className='container mx-auto   p-5 flex flex-wrap'>
                 <div className='lg:w-[60%]  w-full px-3'>
                     <h2 className='text-white text-3xl my-2'>{data?.title}</h2>
-                    <h2 className='text-yellow-600 text-md my-3 font-serif'>{data?.tagline}</h2><br />
-                    <p className='text-gray-400 font-serif text-md p-3'>{data?.des}</p><br />
+                    <h2 className='text-[#AB916C] text-md my-3 font-serif'>{data?.tagline}</h2><br />
+                    <p className='text-gray-300 font-serif text-md p-3 text-justify'>{data?.des}</p><br />
                     <ul className='flex flex-col gap-3 px-3'>
                         <li className='text-white font-serif flex gap-3'><IoBedOutline size={25} color='white' />No of Rooms : {data?.numberOfRooms} </li>
-                        <li className='text-white font-serif flex'><HiOutlineDocumentCurrencyRupee size={25} />Rate :<LiaRupeeSignSolid /> {data?.ratePerRoom} </li>
+                        <li className='text-white font-serif flex gap-3'><HiOutlineDocumentCurrencyRupee size={25} />Rate :<div className='flex items-center'><LiaRupeeSignSolid /> {data?.ratePerRoom}</div> </li>
                         <li className='text-white font-serif flex gap-3'><FaUserFriends size={25} color='white' />Occupancy : {data?.occupancy} </li>
                         <li className='text-white font-serif flex gap-3'><IoBedOutline size={25} color='white' />Beds : {data?.bedType} </li>
                         <li className='text-white font-serif flex gap-3'><GiCampCookingPot size={25} />Inclusions : {data?.inclusions} </li>
@@ -115,7 +115,7 @@ export default function Booknow() {
 
                         <div>
                             <label className='block mb-1'>Rooms</label>
-                            <input type="number" className='BookFormInput' />
+                            <input type="number" defaultValue={1} className='BookFormInput' />
                         </div><br />
                         <hr /><br />
                         <div className='flex justify-between'>

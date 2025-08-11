@@ -9,8 +9,8 @@ export default function Footer() {
             <div className='w-full  flex flex-wrap p-5  my-8 border-b border-gray-700'>
 
                 <div className='lg:w-[45%] w-full p-5'  >
-                    <h3 className='text-md text-yellow-400'>Stay tuned with The Salbari Resort & Restaurant</h3>
-                    <h4 className='text-white text-3xl my-4'>
+                    <h3 className='text-md text-[#AB916C]'>Stay tuned with The Salbari Resort & Restaurant</h3>
+                    <h4 className='text-white text-2xl my-4'>
 
                         Sign up for our newsletter to <br /> receive our news, deals and <br />special offers.
                     </h4>
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
             {/* inner footer */}
             <div className='w-full p-4 flex justify-around'>
-                <h2 className='text-white text-sm'>© The Salbari Resort & Restaurant. Website build by anonymous</h2>
+                <h2 className='text-white text-sm'>© The Salbari Resort & Restaurant. Design and Develop by anonymous</h2>
                 <div>
 
                 </div>

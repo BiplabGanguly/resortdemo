@@ -22,7 +22,7 @@ export default function RoomHeader() {
         <div>
             <div className=' w-full  flex justify-center items-center flex-col text-center p-5'>
                 <div className='w-[50%] p-5'>
-                    <h3 className='text-yellow-500 text-sm my-3'>welcome to The Salbari Resor & Restaurent</h3>
+                    <h3 className='text-[#AB916C] text-sm my-3'>welcome to The Salbari Resor & Restaurent</h3>
                     <h2 className='lg:text-3xl  text-white my-3'>Explore our refined accommodation options and find the perfect space
                         for your stay.</h2>
                     <span className='font-serif text-gray-400'>
@@ -68,9 +68,9 @@ export default function RoomHeader() {
                         {/* <img src={introbg2} alt="" className='hidden md:block w-[315px] h-[472px] relative top-60 right-50 ' /> */}
                     </div>
                     <div className='lg:w-[45%] p-5'>
-                        <h3 className='text-sm font-semibold tracking-widest text-yellow-200 my-2'>STAY IN THE HEART OF BELPAHARI</h3>
+                        <h3 className='text-sm font-semibold tracking-widest text-[#AB916C] my-2'>STAY IN THE HEART OF BELPAHARI</h3>
                         <h2 className='lg:text-5xl text-2xl text-white tracking-wider mt-5 '>{singleRoom?.title}</h2>
-                        <p className='text-gray-300 font-serif mt-5 mb-4'>{singleRoom?.des}  </p>
+                        <p className='text-gray-300 font-serif mt-5 mb-4 text-justify'>{singleRoom?.des}  </p>
                         <ul>
                             <li className='text-white font-serif'>No of Rooms : {singleRoom?.numberOfRooms} </li>
                             <li className='text-white font-serif flex'>Rate :<LiaRupeeSignSolid /> {singleRoom?.ratePerRoom} </li>
@@ -82,7 +82,10 @@ export default function RoomHeader() {
                         <Link to={`/bookroom/${singleRoom?.id}`} className='font-serif text-white text-md
                              rounded shadow cursor-pointer 
                              border border-[#B99D75]
-                           hover:bg-[#B99D75] hover:text-black
+                           hover:bg-[#B99D75] 
+                           transition
+                           duration-300
+                           ease-in-out
                             px-4 py-3 mt-5'>Book Now</Link>
 
                     </div>

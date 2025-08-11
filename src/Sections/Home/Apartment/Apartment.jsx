@@ -13,10 +13,10 @@ export default function Apartment() {
     return (
         <div className='w-full  pt-[60px]'>
             <div className='flex justify-center flex-col items-center'>
-                <h3 className='text-yellow-200 uppercase font-semibold text-sm mt-5 '>Extraordinary Accommodations</h3>
+                <h3 className='text-[#AB916C] text-lg mt-5 '>Extraordinary Accommodations</h3>
                 <h1 className='lg:text-5xl text-white text-2xl
               my-4
-            '>Choose Your Apartment Type</h1>
+            '>Choose Your Cottage Type</h1>
             </div>
             <div className='container mx-auto mt-5 mb-5 px-4 py-5'>
                 <div className='px-5 flex justify-around   gap-5  flex-wrap ' data-aos="fade-up">
