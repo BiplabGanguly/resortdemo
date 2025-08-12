@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-
+import booknow from "../../../assets/img/booknow.png"
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="text-white">
       <div className="hidden md:flex justify-between w-full items-center px-25 lg:px-30 text-sm py-2 border-b border-[#6C6258] h-[60px]">
-        <h2 className="tracking-widest">
-          Kuldiha, Near Kuldiha Bridge, Bamni, West Bengal 721501
+        <h2 className="tracking-widest ">
+          Kuldiha, Near Kuldiha Bridge, Bamni, West Bengal 721501 
+        
         </h2>
-        <h2 className="tracking-widest">
+        <h2 className="tracking-widest flex justify-center items-center gap-2">
           For Bookings & Inquiry: +91 98833 56418, +91 03221 253229
+            <img src={booknow} alt="" className="size-13 animate-pulse cursor-pointer" />
         </h2>
       </div>
 

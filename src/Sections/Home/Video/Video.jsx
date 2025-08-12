@@ -35,26 +35,37 @@ export default function Video() {
 
   return (
     <div className="video-container" onClick={handleTogglePlay} aria-label={isPlaying ? 'Pause video' : 'Play video'}>
-      <button className="logo-overlay">
+      {/* <button className="logo-overlay">
         {!isPlaying ? (
           <FaRegCirclePlay size={100} color="#fff" />
         ) : null}
-      </button>
-      <video
+      </button> */}
+      <iframe
+        width="100%"
+        height="760"
+        src="https://www.youtube.com/embed/cmfeMfdYRFs?autoplay=0&mute=1&controls=1"
+      
+
+        frameBorder="0"
+        // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      {/* <video
         ref={videoRef}
         muted
         playsInline
+
         // add loop if needed
         poster="https://videocdn.cdnpk.net/videos/0bda3d2b-7d87-4040-9fd9-de90294e35b7/horizontal/thumbnails/large.jpg?uid=R153708199&amp;ga=GA1.1.910958514.1751544603&amp;item_id=2846622"
       >
         <source
-          src="https://drive.google.com/file/d/1roCbUrhufy3NXd7gu4-bFbq3YQp_Y8wf/view"
+          src="https://youtu.be/cmfeMfdYRFs?si=CUb3PKlmNv5yBOz7"
+
           type="video/mp4"
         />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
     </div>
 
   );
 }
-{/* <video width="1280" height="720" controls="" controlslist="nodownload" playsinline="" autoplay="" loop="" class="absolute inset-0 block h-full max-w-full overflow-hidden w-full object-cover" aria-hidden="true"><source type="video/mp4"></video> */ }
