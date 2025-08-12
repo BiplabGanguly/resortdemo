@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./Banner.style.css"
 import Navbar from '../Navbar/Navbar'
-import aos from 'aos'
 import 'aos/dist/aos.css';
-import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { Link, useLocation } from 'react-router-dom';
 import booknow from "../../../assets/img/booknow.png"
 import { IoCloseCircleSharp } from "react-icons/io5";
@@ -14,9 +12,7 @@ export default function Banner() {
   const [showPopup, setshowPopup] = useState(true);
   const PopUpMessage = ['hey! hurry Up', 'book now ', 'check the best room']
   useEffect(() => {
-    aos.init({
-      duration: 1000
-    });
+
     const interval = setInterval(() => {
       setshowPopup(prev => !prev)
 
