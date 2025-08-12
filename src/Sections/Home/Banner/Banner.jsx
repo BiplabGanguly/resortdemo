@@ -1,17 +1,28 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Banner.style.css"
 import Navbar from '../Navbar/Navbar'
 import aos from 'aos'
 import 'aos/dist/aos.css';
+import { BiSolidMessageRoundedDots } from "react-icons/bi";
 import { Link, useLocation } from 'react-router-dom';
-
+import booknow from "../../../assets/img/booknow.png"
+import { IoCloseCircleSharp } from "react-icons/io5";
+import { AiOutlineMessage } from "react-icons/ai";
 export default function Banner() {
   const path = useLocation()
-  console.log(path)
+  // console.log(path)
+  const [showPopup, setshowPopup] = useState(true);
+  const PopUpMessage = ['hey! hurry Up', 'book now ', 'check the best room']
   useEffect(() => {
     aos.init({
       duration: 1000
-    })
+    });
+    const interval = setInterval(() => {
+      setshowPopup(prev => !prev)
+
+    }, 4000);
+
+    return () => clearInterval(interval);
   }, [])
   return (
     <>
@@ -50,13 +61,13 @@ export default function Banner() {
                   <div className='lg:w-[25%] w-full '>
 
                     <button className='text-white
-                 bg-transparent px-6 py-3 border
-                  border-[#897862] cursor-pointer
+                   bg-transparent px-6 py-3 border
+                   border-[#897862] cursor-pointer
                    hover:bg-[#AB916C] 
                    transitions
                    duration-400
                    ease-in-out
-                   w-full
+                    w-full
                    '>Check Availability</button>
 
                   </div>
@@ -65,10 +76,20 @@ export default function Banner() {
               </div>
             ) : null
           }
-
-
+          {/* 3. Popup Message */}
+          {showPopup && (
+            <div className='w-67 p-1.5
+            fixed bottom-10 lg:right-5 right-13
+              animate-bounce
+             customPopUp' >
+              <IoCloseCircleSharp size={27} className='absolute right-0 -top-3 cursor-pointer' onClick={() => setshowPopup(false)} />
+              <AiOutlineMessage size={22} className='' />
+              <p className='text-sm '>
+                Rooms are selling fast – Book now to secure your spot!
+              </p>
+            </div>
+          )}
         </div>
-
       </div>
 
     </>
